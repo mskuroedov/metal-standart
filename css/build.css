@@ -167,16 +167,16 @@ button:focus, a:focus, input:focus {
     max-height: 0;
     overflow: hidden;
     transition: all .2s;
-    left: 0; }
+    left: 0;
+    padding: 8px 0; }
     .companies .pop.--active {
       max-height: inherit; }
     .companies .pop a {
       display: block;
-      height: 24px;
       font-size: 15px;
       line-height: 24px;
       color: #000000;
-      padding: 0 15px 0 5px;
+      padding: 3px 15px 4px 5px;
       white-space: nowrap; }
       .companies .pop a:hover {
         color: #EB2B2C; }
