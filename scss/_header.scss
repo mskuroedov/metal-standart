@@ -221,6 +221,7 @@
     overflow: hidden;
     transition: all .2s;
     left: 0;
+    padding: 8px 0;
 
     &.--active {
       max-height: inherit;
@@ -228,11 +229,10 @@
 
     a {
       display: block;
-      height: 24px;
       font-size: 15px;
       line-height: 24px;
       color: #000000;
-      padding: 0 15px 0 5px;
+      padding: 3px 15px 4px 5px;
       white-space: nowrap;
       &:hover {
         color: #EB2B2C;
