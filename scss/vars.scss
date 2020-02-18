@@ -1,0 +1,10 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  padding-top: 154px;
+}
+
+button,a,input{
+  &:focus{
+    outline:none;
+  }
+}

@@ -1,0 +1,243 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 50;
+  background: white;
+
+  .first-row {
+
+    height: 90px;
+    transition: all .2s;
+  }
+
+  &.collapsed {
+    .first-row {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .split {
+      display: none;
+    }
+
+    .container-fluid {
+      box-shadow: 0px 5px 8px #CED7DC;
+    }
+
+    .collapsed-logo {
+      width: auto;
+    }
+
+    .companies {
+      margin-left: auto;
+    }
+  }
+
+  .container-fluid {
+    box-shadow: none;
+    transition: all .2s;
+  }
+
+  .collapsed-logo {
+    width: 0;
+    overflow: hidden;
+  }
+
+  &__nav-item {
+    height: 55px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    transition: all .2s;
+
+    &:first-of-type {
+      margin-left: auto;
+    }
+
+    &:last-of-type {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      color: #000000;
+      text-decoration: none;
+      background: #BCE3FA;
+    }
+
+    &.--active {
+      color: white;
+      background: #475865;
+    }
+  }
+}
+
+.mail-block {
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #111111;
+
+    &:hover {
+      color: #EB2B2C;
+      text-decoration: underline;
+    }
+  }
+}
+
+.geo-block {
+  text-align: right;
+
+  .name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+
+    img {
+      margin-right: 6px;
+      position: relative;
+      top: -4px;
+    }
+  }
+
+  .address {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: #7C7C7C;
+  }
+}
+
+.phone-block {
+  text-align: right;
+
+  img {
+    margin-right: 9px;
+    margin-top: -3px;
+  }
+
+  a {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+
+    &:hover {
+      color: #EB2B2C;
+      text-decoration: underline;
+    }
+  }
+
+  div {
+    font-size: 13px;
+    line-height: 22px;
+    color: #7C7C7C;
+  }
+
+}
+
+.apply-btn {
+  border: 0;
+  color: white;
+  background: #EB2B2C;
+  height: 45px;
+  padding: 0 28px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background: #475865;
+  }
+}
+
+.split {
+  margin-top: 8px;
+  height: 1px;
+  width: 100%;
+  background: #BDDDF0;
+}
+
+.companies {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  margin-right: auto;
+  margin-left: 35px;
+  transition: all .2s;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+
+  span:hover {
+    color: #EB2B2C;
+
+    svg path {
+      fill: #EB2B2C;
+    }
+  }
+
+  svg {
+    margin-left: 10px;
+    transition: all .2s;
+  }
+
+  .pop {
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    transform: translateY(100%);
+    background: white;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .2s;
+    left: 0;
+
+    &.--active {
+      max-height: inherit;
+    }
+
+    a {
+      display: block;
+      height: 24px;
+      font-size: 15px;
+      line-height: 24px;
+      color: #000000;
+      padding: 0 15px 0 5px;
+      white-space: nowrap;
+      &:hover {
+        color: #EB2B2C;
+      }
+    }
+  }
+}
+

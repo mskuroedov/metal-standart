@@ -1,0 +1,154 @@
+.calculator {
+  padding-bottom: 72px;
+
+  &__container {
+    margin: 0;
+    border-top: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    border-left: 1px solid #F2F2F2;
+  }
+
+  &__nav {
+    padding-top: 25px;
+    border-right: 1px solid #F2F2F2;
+    margin-right: 30px;
+    width: 249px;
+    padding-left: 29px;
+
+    &__block {
+      margin-bottom: 30px;
+    }
+
+    .title {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000;
+      margin-bottom: 15px;
+
+      svg {
+        position: relative;
+        top: -3px;
+        left: 6px;
+        transition: all .2s;
+      }
+
+      &:hover {
+        color: #EB2B2C;
+        text-decoration: none;
+
+        svg path {
+          fill: #EB2B2C
+        }
+      }
+
+      &[aria-expanded="false"] {
+        svg {
+          transform: rotate(-90deg)
+        }
+      }
+    }
+
+    .link {
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      color: #1566C6;
+      transition: all .2s;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #EB2B2C;
+      }
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      &.--active {
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__formula {
+    padding-top: 26px;
+    flex: 1;
+
+    .title {
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+
+    .img_block {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__fields {
+    width: 330px;
+    padding-top: 24px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    .filters {
+      border-bottom: 0;
+      margin-bottom: 31px;
+      padding-bottom: 0;
+
+      &__item {
+        width: 145px;
+        text-align: center;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+      }
+    }
+  }
+
+  &__result {
+    height: 95px;
+    background: #DFF1FC;
+    margin: 0;
+    padding-left: 279px;
+    padding-top: 15px;
+
+    &__item {
+      margin-right: 30px;
+      width: 185px;
+      color: #000;
+
+      .label {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      .val {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+
+        &.--link{
+          color: #1566C6;
+          text-decoration: underline;
+          transition: all .2s;
+          &:hover{
+            color: #EB2B2C;
+          }
+        }
+      }
+    }
+  }
+}

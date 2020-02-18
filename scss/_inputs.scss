@@ -1,0 +1,83 @@
+.input {
+  &__select {
+    height: 40px;
+
+    .nice-select {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 40px;
+      line-height: 39px;
+      padding-left: 15px;
+      border-radius: 4px;
+
+      &.open {
+        border-color: #475865;
+        border-radius: 4px 4px 0 0;
+      }
+
+      &:after {
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        margin-top: -3px;
+        right: 15px;
+      }
+
+      .list {
+        width: calc(100% + 2px);
+        margin-top: 0;
+        margin-left: -1px;
+        border-radius: 0 0 4px 4px;
+        border: 1px solid #475865;
+        .option{
+          &:hover{
+            color: #000000;
+            background: #DFF1FC;
+          }
+          &.selected{
+            background: #475865 !important;
+            color: white;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__block {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+    label {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      height: 40px;
+      background: #FFFFFF;
+      border: 1px solid #E1E1E1;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding-left: 15px;
+      transition: all .2s;
+
+      &::placeholder {
+        color: #999;
+      }
+
+      &:focus {
+        border-color: #475865;
+      }
+    }
+
+    .measure {
+      position: absolute;
+      right: 15px;
+      bottom: 10px;
+    }
+  }
+}

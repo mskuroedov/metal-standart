@@ -1,0 +1,160 @@
+.footer {
+  background: #233744;
+  padding-top: 35px;
+  color: white;
+
+  &__logo {
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 23px;
+    opacity: 0.6;
+    margin-bottom: 30px;
+  }
+
+  &__col {
+    margin-left: 40px;
+    min-width: 150px;
+    max-width: 183px;
+
+    .title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+
+      &.mb-15 {
+        margin-bottom: 15px;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 14px;
+      line-height: 23px;
+      opacity: 0.6;
+      color: white;
+      margin-bottom: 5px;
+
+      &:hover {
+        color: #EB2B2C;
+        opacity: 1;
+      }
+    }
+
+    .phones, .geo, .mails {
+      display: flex;
+
+      .icon {
+        width: 22px;
+
+        svg path {
+          fill: #647682;
+        }
+      }
+
+      a {
+        &:hover {
+          color: #EB2B2C;
+        }
+      }
+    }
+
+    .phones {
+      margin-bottom: 17px;
+
+      a {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 1;
+        margin-bottom: 0;
+      }
+    }
+
+    .geo {
+      margin-bottom: 20px;
+
+      .icon svg {
+        position: relative;
+        top: -2px;
+        left: -1px;
+      }
+
+      .main {
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 3px;
+
+        .address {
+          margin-bottom: 2px;
+        }
+
+        .city {
+          opacity: .5;
+        }
+      }
+    }
+
+    .mails {
+      a {
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+        text-decoration: underline;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .phone-block {
+    text-align: left;
+    margin-bottom: 16px;
+
+    img {
+      margin-right: 11px;
+      margin-top: -6px;
+    }
+
+    a {
+      color: white;
+      &:hover{
+        color: #EB2B2C;
+      }
+    }
+  }
+
+  .split {
+    height: 1px;
+    margin-top: 76px;
+    background: rgba(255, 255, 255, .2);
+  }
+
+
+  .row-second {
+    height: 66px;
+    align-items: center;
+  }
+
+  .copyright {
+    font-size: 13px;
+    line-height: 24px;
+    opacity: 0.4;
+  }
+
+  &__devs {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+
+    .b {
+      height: 40px;
+      width: 1px;
+      background: rgba(255, 255, 255, .1);
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
