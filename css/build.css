@@ -168,9 +168,10 @@ button:focus, a:focus, input:focus {
     overflow: hidden;
     transition: all .2s;
     left: 0;
-    padding: 8px 0; }
+    padding: 0 0; }
     .companies .pop.--active {
-      max-height: inherit; }
+      max-height: inherit;
+      padding: 8px 0; }
     .companies .pop a {
       display: block;
       font-size: 15px;

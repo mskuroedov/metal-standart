@@ -221,10 +221,11 @@
     overflow: hidden;
     transition: all .2s;
     left: 0;
-    padding: 8px 0;
+    padding: 0 0;
 
     &.--active {
       max-height: inherit;
+      padding: 8px 0;
     }
 
     a {
